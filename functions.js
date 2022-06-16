@@ -239,7 +239,14 @@ Output:
  */
 
 export function makeCountObject(arr) {
-    return {};
+    return arr.reduce((acc, { type }) => {
+        if(acc[type]) {
+            acc[type]++;
+        } else {
+            acc[type] = 1;
+        }
+        return acc;
+    }, {});
 }
 
 

@@ -121,7 +121,7 @@ test('should return the animal with the matching name', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should return a proper array of arrays', (expect) => {
+test('should return a proper array of arrays', (expect) => {
     const expected = [
         [['name', 'scooter'], ['type', 'dog']], 
         [['name', 'sassy'], ['type', 'dog']], 

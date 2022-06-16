@@ -152,7 +152,7 @@ Output:
 */
 
 export function makeArrayOfArraysOfArrays(arr) {
-    return [];
+    return arr.map(animal => [['name', animal.name], ['type', animal.type]]);
 }
 
 ////////////////////////////////////////////////////////
@@ -181,7 +181,7 @@ Output:
 */
 
 export function getCars(arr) {
-    return [];
+    return arr.filter(vehicle => vehicle.type === 'car');
 }
 
 /*

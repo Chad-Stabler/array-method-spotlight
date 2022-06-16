@@ -259,5 +259,8 @@ Output:
 
 
 export function makeKeysString(arr) {
-    return '';
+    return arr.reduce((acc, vehicle) => {
+        acc = String(Object.keys(vehicle));
+        return acc;
+    }, '');
 }

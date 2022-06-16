@@ -200,7 +200,7 @@ test('should return an count object', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should return an weird string of keys', (expect) => {
+test('should return an weird string of keys', (expect) => {
 
 
     const actual = makeKeysString([...vehicles]);

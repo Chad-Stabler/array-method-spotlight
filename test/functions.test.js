@@ -28,6 +28,8 @@ const pets = [
 const otherPets = [
     { name: 'scooter', type: 'dog' },
     { name: 'sassy', type: 'dog' },
+    { name: 'legzo', type: 'frog' },
+    { name: 'fluff', type: 'squirrel' },
 ];
 
 
@@ -50,7 +52,7 @@ test('should make an array of names', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should return dogs names', (expect) => {
+test('should return dogs names', (expect) => {
     const expected = ['scooter', 'sassy'];
     
     const actual = getNamesOfDogs([...otherPets]);

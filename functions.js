@@ -19,7 +19,7 @@ const arr = [
 getDogs(arr);
 
 export function getDogs(arr) {
-    return arr.map(dog => dog);
+    return arr.filter(animal => animal.type === 'dog');
 }
 
 /*
@@ -38,7 +38,8 @@ OUTPUT:
 */
 
 export function getNamesOfDogs(arr) {
-    return [];
+    const dogs = arr.filter(animal => animal.type === 'dog');
+    return dogs.map(dog => dog.name);
 }
 
 /*

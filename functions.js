@@ -223,7 +223,9 @@ Output: 14
  */
 
 export function getSumOfAges(arr) {
-    return 0;
+    return arr.reduce((acc, animal) => {
+        return acc + animal.age;
+    }, 0);
 }
 
 /*

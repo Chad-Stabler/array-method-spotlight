@@ -28,8 +28,6 @@ const pets = [
 const otherPets = [
     { name: 'scooter', type: 'dog' },
     { name: 'sassy', type: 'dog' },
-    { name: 'legzo', type: 'frog' },
-    { name: 'fluff', type: 'squirrel' },
 ];
 
 

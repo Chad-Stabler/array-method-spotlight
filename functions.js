@@ -1,7 +1,7 @@
-/*
-For this first set of functions, assume the input array looks like this:
 
-const petsArray = [
+//For this first set of functions, assume the input array looks like this:
+
+const arr = [
     { name: 'spot', type: 'dog' },
     { name: 'rover', type: 'dog' },
     { name: 'jumpy', type: 'frog' },
@@ -9,16 +9,17 @@ const petsArray = [
 ];
 
 
-/*
-OUTPUT: 
+
+/*OUTPUT: 
 [
     { name: 'spot', type: 'dog' },
     { name: 'rover', type: 'dog' },
 
 ]*/
+getDogs(arr);
 
 export function getDogs(arr) {
-    return [];
+    return arr.map(dog => dog);
 }
 
 /*
@@ -76,7 +77,7 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-     return []
+    return [];
 }
 
 /*

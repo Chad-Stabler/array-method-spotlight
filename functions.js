@@ -211,7 +211,9 @@ Output:
  */
 
 export function makeModelsStringWithReduce(arr) {
-    return '';
+    return arr.reduce((acc, vehicle) => {
+        return acc + vehicle.model;
+    }, '');
 }
 
 /*
